@@ -52,14 +52,21 @@ ul {
     /* display: inline; */
     list-style-type: none;
     margin: 0px;
-    padding: 8px;
+    padding: 0px;   /* was 8px */
+    overflow: hidden;
     background-color: MidnightBlue;
-    font-family: verdana;
+}
+
+.nav {
+    float: left;
 }
 
 li a {
+    display: block;
     color: FloralWhite;
     font-family: verdana;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -69,6 +76,16 @@ li a:hover {
     color: MidnightBlue;
 }
 
-.active {
-    background-color: #04AA6D;
+/* .active {
+    background-color: FloralWhite;
+    color: MidnightBlue
+} */
+
+a {
+    font-family: verdana;
+}
+
+img {
+    width: 680px;
+    height: 440px
 }
