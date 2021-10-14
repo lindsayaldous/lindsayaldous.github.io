@@ -18,11 +18,13 @@ h1 {
 h2 {
     font-family: verdana;
     color: MidnightBlue;
+    font-size: 18px;
 }
   
 h3 {
     font-family: verdana;
     color: MidnightBlue;
+    font-size: 14px;
 }
 
 /* so far, have just used the borders from the W3 schools example */
@@ -42,15 +44,17 @@ p {
 /* for now, using the style from the w3 schools example, but do need to tweak it */
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 8px;
-    background-color: MidnightBlue;
     font-family: verdana;
 }
 
 /* switching the li elements to be inline instead of block elements, so the line breaks are removed */
-li {
-    display: inline;
+.navbar {
+    /* display: inline; */
+    list-style-type: none;
+    margin: 0px;
+    padding: 8px;
+    background-color: MidnightBlue;
+    font-family: verdana;
 }
 
 li a {
