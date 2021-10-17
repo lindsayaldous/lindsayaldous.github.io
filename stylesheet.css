@@ -1,43 +1,80 @@
 /* need lots of comments */
+/* is there a best practice for the order to put things on this page? */
+/* things are currently a mess in here, don't look too closely */
 
-title {
+/* title {
     text-align: center;
-}
+} */
 
 body {
-  background-color:floralwhite ;
-
+    background-color: rgb(234,234,224);
+    margin: 0px;
 }
 
 h1 {
     font-family: verdana;
-    color: MidnightBlue;
+    color: #17140D;
     text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
 }
   
 h2 {
     font-family: verdana;
-    color: MidnightBlue;
+    color: #2B3210;
     font-size: 18px;
+    margin: 10px;
 }
   
 h3 {
     font-family: verdana;
-    color: MidnightBlue;
+    color: #17140D;
     font-size: 14px;
+    margin: 10px;
+    text-indent: 24px;
 }
 
-/* so far, have just used the borders from the W3 schools example */
-table, th, td {
-    border:1px solid black;
+h4 {
+    font-family: verdana;
+    color: #2B3210;
+    font-size: 12px;
+    margin: 10px;
 }
-  
+
 p {
     font-family: verdana;
-    color: MidnightBlue;
+    color: #17140D;
     font-size: 14px;
-    text-indent: 30px;
-    border-style: round;
+    /* border-style: round; */
+    margin: 10px;
+    margin-bottom: 1em;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+    .intro {
+        text-align: center;
+        font-family: verdana;
+        color: #17140D;
+        font-size: 16px;
+        text-indent: 30px;
+        margin: 10px;
+        margin-bottom: 1em;
+    }
+
+/* so far, have just used the borders from the W3 schools example */
+table {
+    border:1px solid black;
+    margin: 10px;
+    float: right;
+}
+
+tr, th, td {
+    border:1px solid black;
+    font-family: verdana;
+    color: MidnightBlue;
+    font-size: 12px;
 }
 
 /* the style for the nav bar, for now - also needs to move to external CSS eventually */
@@ -45,20 +82,15 @@ p {
 ul {
     list-style-type: none;
     font-family: verdana;
+    margin: 10px;
 }
-
-/* switching the li elements to be inline instead of block elements, so the line breaks are removed */
-.navbar {
-    /* display: inline; */
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;   /* was 8px */
-    overflow: hidden;
-    background-color: MidnightBlue;
-}
-
-.nav {
-    float: left;
+  
+li {
+    font-family: verdana;
+    color: #2B3210;
+    font-size: 12px;
+    text-indent: 30px;
+    border-style: round;
 }
 
 /*  I really wanted to use a header with an image because they're so common that a webpage looks
@@ -75,31 +107,99 @@ ul {
     height: 8vw;
 }
 
+    .headerText {
+        color: floralwhite;
+        font-size: 12px;
+    }
+
+/* switching the li elements to be inline instead of block elements, so the line breaks are removed */
+.navbar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;   /* was 8px */
+    overflow: hidden;
+    background-color: #373f14;
+}
+
+    .navItem {
+        float: left;
+        font-size: 15px;
+    }
+
+    .navLink {
+        font-family: verdana;
+    }
+
 li a {
     display: block;
-    color: FloralWhite;
+    color: rgb(235,234,224);
     font-family: verdana;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 10px;
     text-decoration: none;
 }
 
 /* got the hover idea from w3 schools */
 li a:hover {
-    background-color: FloralWhite;
+    background-color: rgb(235,234,224);;
     color: MidnightBlue;
 }
 
-/* .active {
-    background-color: FloralWhite;
-    color: MidnightBlue
+/* I picked the "2 external links" option from part 3 of the assignment outline,
+and decided to make them buttons because I think it looks much nicer than the 
+default underline text but still helps them stand out from the rest of the
+text. I pulled this CSS from w3schools, and modified it to better suit my design */
+
+        a:link, a:visited {
+            font-family: verdana;
+            color: rgb(235,234,224);
+            margin-bottom: 1em;
+            background-color: #373f14;
+            padding: 8px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 16px;
+        }
+
+        a:hover, a:active {
+            font-family: verdana;
+            text-align: center;
+            color: rgb(235,234,224);
+            background-color: #0f1105;
+        }
+
+
+
+/* .mapExample {
+    width: 510px;
+    height: 330px;
+    margin: 10px;
+    /* float: right; */
+    /* border: 1px solid black
 } */
 
-a {
-    font-family: verdana;
+/* so far this part is copied-pasted from w3 schools - need to fix that */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 600px;
 }
 
-img {
-    width: 680px;
-    height: 440px
-}
+div.gallery img {
+    width: 600px;
+    height: 400px;
+    height: auto;
+  }
+
+  /* width="600" height="400" */
+  /* width="510" height="330" */
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: verdana;
+    font-size: 14px;
+    color: #17140D;
+  }
