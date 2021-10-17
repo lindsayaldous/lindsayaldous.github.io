@@ -61,6 +61,20 @@ ul {
     float: left;
 }
 
+/*  I really wanted to use a header with an image because they're so common that a webpage looks
+    strange to me without it, so I cropped a photo of mine and modified the CSS from the header
+    of this group's website from last year's Collaborative Project
+    https://fleming-tps-kykapp.github.io/Collab/ */
+.header {
+    background-image: url(images/IMG_0227.jpg);
+    background-size: cover;
+    background-position-y: 98%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 8vw;
+}
+
 li a {
     display: block;
     color: FloralWhite;
