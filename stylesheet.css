@@ -11,6 +11,7 @@ body {
     margin: 0px;
 }
 
+/* # need to swap down the headers, there aren't any h1 right now but need to be */
 h1 {
     font-family: verdana;
     color: #17140D;
@@ -25,6 +26,7 @@ h2 {
     color: #2B3210;
     font-size: 18px;
     margin: 10px;
+    text-indent: 50px;
 }
   
 h3 {
@@ -32,7 +34,7 @@ h3 {
     color: #17140D;
     font-size: 14px;
     margin: 10px;
-    text-indent: 24px;
+    text-indent: 100px;
 }
 
 h4 {
@@ -40,6 +42,7 @@ h4 {
     color: #2B3210;
     font-size: 12px;
     margin: 10px;
+    text-indent: 100px;
 }
 
 p {
@@ -61,20 +64,42 @@ p {
         text-indent: 30px;
         margin: 10px;
         margin-bottom: 1em;
+        padding-right: 250px;
+        padding-left: 250px;
+        /* font-weight: bold */
     }
 
-/* so far, have just used the borders from the W3 schools example */
+/* am I done formatting this table? still not a fan of the colors */
 table {
-    border:1px solid black;
-    margin: 10px;
+    border:1px solid #2B3210;
+    font-family: verdana;
+    color: #17140D;
+    margin-right: 125px;
+    margin-top: 50px;
     float: right;
+    padding: 5px;
 }
 
-tr, th, td {
-    border:1px solid black;
-    font-family: verdana;
-    color: MidnightBlue;
-    font-size: 12px;
+th {
+    border:1px solid #2B3210;
+    font-size: 14px;
+    height: 50px;
+    width: 275px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2eed0;
+}
+
+td {
+    border:1px solid #2B3210;
+    font-size: 13px;
+    padding: 5px
+}
+
+td.right {
+    border:1px solid #2B3210;
+    text-align: center
 }
 
 /* the style for the nav bar, for now - also needs to move to external CSS eventually */
@@ -98,7 +123,7 @@ li {
     of this group's website from last year's Collaborative Project
     https://fleming-tps-kykapp.github.io/Collab/ */
 .header {
-    background-image: url("images/IMG_0227.JPG");
+    background-image: url("images/IMG_0227.jpg");
     background-size: cover;
     background-position-y: 98%;
     margin: 0px;
@@ -185,6 +210,8 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     width: 600px;
+    float: left;
+    /* column-count: 2; */
 }
 
 div.gallery img {
