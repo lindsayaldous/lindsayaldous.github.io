@@ -1,127 +1,13 @@
-/* need lots of comments */
-/* is there a best practice for the order to put things on this page? */
 /* things are currently a mess in here, don't look too closely */
 
-/* title {
-    text-align: center;
-} */
+/* need to reference every page of w3 schools I use !! */
 
-body {
-    background-color: rgb(234,234,224);
-    margin: 0px;
-}
-
-/* # need to swap down the headers, there aren't any h1 right now but need to be */
-h1 {
-    font-family: verdana;
-    color: #17140D;
-    text-align: center;
-    font-size: 24px;
-    padding: 20px;
-    margin: 10px;
-}
-  
-h2 {
-    font-family: verdana;
-    color: #2B3210;
-    font-size: 18px;
-    margin: 10px;
-    text-indent: 50px;
-}
-  
-h3 {
-    font-family: verdana;
-    color: #17140D;
-    font-size: 14px;
-    margin: 10px;
-    text-indent: 100px;
-}
-
-h4 {
-    font-family: verdana;
-    color: #2B3210;
-    font-size: 12px;
-    margin: 10px;
-    text-indent: 100px;
-}
-
-p {
-    font-family: verdana;
-    color: #17140D;
-    font-size: 14px;
-    margin: 10px;
-    margin-bottom: 1em;
-    padding-right: 100px;
-    padding-left: 100px;
-}
-
-    .intro {
-        text-align: center;
-        font-family: verdana;
-        color: #17140D;
-        font-size: 16px;
-        text-indent: 30px;
-        margin: 10px;
-        margin-bottom: 1em;
-        padding-right: 250px;
-        padding-left: 250px;
-        /* font-weight: bold */
-    }
-
-/* am I done formatting this table? still not a fan of the colors */
-table {
-    border:1px solid #2B3210;
-    font-family: verdana;
-    color: #17140D;
-    margin-right: 125px;
-    margin-top: 50px;
-    float: right;
-    padding: 5px;
-}
-
-th {
-    border:1px solid #2B3210;
-    font-size: 14px;
-    height: 50px;
-    width: 275px;
-}
-
-tr:nth-child(odd) {
-    background-color: #f2eed0;
-}
-
-td {
-    border:1px solid #2B3210;
-    font-size: 13px;
-    padding: 5px
-}
-
-td.right {
-    border:1px solid #2B3210;
-    text-align: center
-}
-
-/* the style for the nav bar, for now - also needs to move to external CSS eventually */
-/* for now, using the style from the w3 schools example, but do need to tweak it */
-ul {
-    list-style-type: none;
-    font-family: verdana;
-    margin: 10px;
-}
-  
-li {
-    font-family: verdana;
-    color: #2B3210;
-    font-size: 12px;
-    text-indent: 30px;
-/*     border-style: round; */
-}
 
 /*  I really wanted to use a header with an image because they're so common that a webpage looks
     strange to me without it, so I cropped a photo of mine and modified the CSS from the header
     of this group's website from last year's Collaborative Project
     https://fleming-tps-kykapp.github.io/Collab/ */
-.header {
+header {
     background-image: url("https://raw.githubusercontent.com/lindsayaldous/lindsayaldous.github.io/main/images/IMG_0227.JPG");
     background-size: cover;
     background-position-y: 98%;
@@ -129,103 +15,151 @@ li {
     padding: 0px;
     border: 0px;
     height: 8vw;
-}
-
-    .headerText {
-        color: floralwhite;
-        font-size: 12px;
     }
 
-/* switching the li elements to be inline instead of block elements, so the line breaks are removed */
-.navbar {
+body {
+    background-color: rgb(234,234,224);
+    margin: 0px;
+    font-family: verdana;
+}
+
+/* need to be careful about duplication! lots of my repetition can do in body 
+also need to add the w3 schools sources - that should help flesh out the 20% requirement!
+*/
+
+h1 {
+    color: #2B3210;
+    font-size: 18px;
+    margin: 20px;
+    text-indent: 50px;
+}
+    .intro {
+        text-align: center;
+        padding-top: 35px;
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+
+h2 {
+    color: #17140D;
+    font-size: 14px;
+    margin: 10px;
+    text-indent: 100px;
+}
+
+p {
+    color: #17140D;
+    font-size: 13px;
+    margin: 12px;
+    margin-bottom: 1em;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+/* https://www.w3schools.com/css/css_table.asp */
+table {
+    border:1px solid #2B3210;
+    color: #17140D;
+    margin-right: 125px;
+    margin-top: 50px;
+    float: right;
+    padding: 5px;
+}
+    th {
+        border:1px solid #2B3210;
+        font-size: 14px;
+        height: 50px;
+        width: 275px;
+    }
+
+    /* https://www.w3schools.com/css/css_table_style.asp */
+    tr:nth-child(odd) {
+        background-color: #f2eed0;
+    }
+
+    td {
+        border:1px solid #2B3210;
+        font-size: 13px;
+        padding: 5px
+    }
+
+    td.right {
+        text-align: center
+    }
+
+/* the nav bar */
+/* needs way more notes */
+ul {
     list-style-type: none;
     margin: 0px;
-    padding: 0px;   /* was 8px */
+    padding: 8px 10px;
     overflow: hidden;
     background-color: #373f14;
-}
-
-    .navItem {
-        float: left;
-        font-size: 15px;
-    }
-
-    .navLink {
-        font-family: verdana;
-    }
-
-li a {
-    display: block;
-    color: rgb(235,234,224);
-    font-family: verdana;
+    font-size: 15px;
     text-align: center;
-    padding: 8px 10px;
+}
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 150px;
+        color: rgb(235,234,224);
+    }
+        /* got the hover idea from w3 schools */
+        /* https://www.w3schools.com/css/css_link.asp */
+        li a:hover {
+            background-color: rgb(235,234,224);;
+            color: #373f14;
+        }
+
+
+/* I picked the "2 external links" option from part 3 of the assignment outline.
+I pulled this CSS from w3schools, and modified it to better suit my design */
+/* https://www.w3schools.com/css/css3_buttons.asp */
+
+a.hyperlink {
+    color: rgb(235,234,224);
+    margin-bottom: 1em;
+    margin-left: 115px;
+    background-color: #373f14;
+    padding: 8px 18px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    border-radius: 16px;
+    font-size: 12px;
 }
 
-/* got the hover idea from w3 schools */
-li a:hover {
-    background-color: rgb(235,234,224);;
-    color: MidnightBlue;
+a.hyperlink:hover {
+    background-color: #f2eed0;
+    color: #373f14;
+    border: 1px solid #373f14;
 }
 
-/* I picked the "2 external links" option from part 3 of the assignment outline,
-and decided to make them buttons because I think it looks much nicer than the 
-default underline text but still helps them stand out from the rest of the
-text. I pulled this CSS from w3schools, and modified it to better suit my design */
-
-        a:link, a:visited {
-            font-family: verdana;
-            color: rgb(235,234,224);
-            margin-bottom: 1em;
-            background-color: #373f14;
-            padding: 8px 18px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 16px;
-        }
-
-        a:hover, a:active {
-            font-family: verdana;
-            text-align: center;
-            color: rgb(235,234,224);
-            background-color: #0f1105;
-        }
-
-
-
-/* .mapExample {
-    width: 510px;
-    height: 330px;
-    margin: 10px;
-    /* float: right; */
-    /* border: 1px solid black
-} */
 
 /* so far this part is copied-pasted from w3 schools - need to fix that */
 
 div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    width: 600px;
+    margin: 20px;
     float: left;
-    /* column-count: 2; */
+    /* justify-content: center; */
+    margin-right: 20px;
+    margin-left: 115px;
 }
-
+        
 div.gallery img {
     width: 600px;
     height: 400px;
-    height: auto;
-  }
-
-  /* width="600" height="400" */
-  /* width="510" height="330" */
+    border: 1px solid black;
+}
   
 div.desc {
     padding: 15px;
     text-align: center;
-    font-family: verdana;
     font-size: 14px;
     color: #17140D;
+    font-weight: bold;
   }
