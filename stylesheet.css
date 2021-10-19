@@ -8,7 +8,7 @@
     of this group's website from last year's Collaborative Project
     https://fleming-tps-kykapp.github.io/Collab/ */
 header {
-    background-image: url("https://raw.githubusercontent.com/lindsayaldous/lindsayaldous.github.io/main/images/IMG_0227.JPG");
+    background-image: url("https://github.com/lindsayaldous/lindsayaldous.github.io/blob/main/images/IMG_0227.JPG?raw=true");
     background-size: cover;
     background-position-y: 98%;
     margin: 0px;
@@ -29,7 +29,7 @@ also need to add the w3 schools sources - that should help flesh out the 20% req
 
 h1 {
     color: #2B3210;
-    font-size: 18px;
+    font-size: 16px;
     margin: 20px;
     text-indent: 50px;
 }
@@ -42,14 +42,14 @@ h1 {
 
 h2 {
     color: #17140D;
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px;
     text-indent: 100px;
 }
 
 p {
     color: #17140D;
-    font-size: 13px;
+    font-size: 11px;
     margin: 12px;
     margin-bottom: 1em;
     padding-right: 100px;
