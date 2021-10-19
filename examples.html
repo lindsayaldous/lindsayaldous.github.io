@@ -2,7 +2,7 @@
 
 <!-- last modified 18 October 2021 -->
 
-<html>
+<html lang="en">
 
 <head>
 
@@ -17,12 +17,12 @@
     
 </head>
 
+
 <body>
 
     <header>
         <!-- I understand that this is wholly unnecessary but I'd really like to add an image 
         as a header. They're so common that a webpage looks odd to me without one -->
-        <div class = "header"> </div>
     </header>
 
     <nav>
@@ -32,15 +32,16 @@
         Since the assignment outline recommends finding an example of a navbar that isn't w3schools 
         and modifying that one to use, I looked to the page source for a website from one of last year's 
         Collaborative Projects: https://fleming-tps-kykapp.github.io/Collab/ -->
-        <ul class="navbar">
+        <ul>
             <!-- the list of links for the nav bar -->
-            <li class="navItem"><a class="navLink" href = "index.html"> About </a></li>
-            <li class="navItem"><a class="navLink" href = "examples.html"> Summer 2021 </a></li>
+            <li><a href = "index.html"> About </a></li>
+            <li><a href = "examples.html"> Summer 2021 </a></li>
         </ul>
     </nav>
 
     <main>
-        <h1> Summer 2021 </h1>
+        <h1 class="intro"> Summer 2021 </h1>
+        <br>
         <p>
             This past summer, I had the opportunity to work for the Municipality 
             of Kincardine as the GIS Student. I did a variety of odd jobs over the
@@ -49,9 +50,11 @@
             a Story Map displaying the locations of accessible parking 
             spaces across the municipality.
         </p>
-        <!-- still need to figure out how to get these centered and break the connection to the navbar links? -->
-        <a class="hyperlink" href="https://storymaps.arcgis.com/stories/edb833a69fff420283a43c509b82e824"> Click here to view the Accessible Parking Story Map! </a>
+
+        <!-- link to the Accessible Parking Story Map -->
+        <a class="hyperlink" href="https://storymaps.arcgis.com/stories/edb833a69fff420283a43c509b82e824"> Click here to view the Accessible Parking Story Map </a>
         <br>
+
         <p>
             Another project I got to complete was updating the Kincardine Trail Association's
             main trail map. The organization requested that a few changes be made 
@@ -66,7 +69,9 @@
             Since the PDF version of the map was being updated, the web maps within the 
             existing Trails Story Map needed similar treatment:
         </p>
-        <a class="hyperlink" href="https://brucecounty.maps.arcgis.com/apps/MapSeries/index.html?appid=c3dceb77f5d64faa8a75469afefed1f3"> Click here to view the Kincardine Trails Story Map!</a>
+
+        <!-- link to the Trails Story Map -->
+        <a class="hyperlink" href="https://brucecounty.maps.arcgis.com/apps/MapSeries/index.html?appid=c3dceb77f5d64faa8a75469afefed1f3"> Click here to view the Kincardine Trails Story Map </a>
         <br>
 
         <!-- I want the 2 map images to sit side-by-side with a caption below each, so I'm testing
