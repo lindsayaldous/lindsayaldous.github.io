@@ -29,7 +29,7 @@ also need to add the w3 schools sources - that should help flesh out the 20% req
 
 h1 {
     color: #2B3210;
-    font-size: 16px;
+    font-size: 18px;
     margin: 20px;
     text-indent: 50px;
 }
@@ -42,14 +42,14 @@ h1 {
 
 h2 {
     color: #17140D;
-    font-size: 12px;
+    font-size: 16px;
     margin: 10px;
     text-indent: 100px;
 }
 
 p {
     color: #17140D;
-    font-size: 11px;
+    font-size: 13px;
     margin: 12px;
     margin-bottom: 1em;
     padding-right: 100px;
