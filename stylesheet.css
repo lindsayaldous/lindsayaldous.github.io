@@ -1,6 +1,4 @@
-/* things are currently a mess in here, don't look too closely */
-
-/* need to reference every page of w3 schools I use !! */
+/* last modified 18 October 2021 */
 
 
 /*  I really wanted to use a header with an image because they're so common that a webpage looks
@@ -8,88 +6,98 @@
     of this group's website from last year's Collaborative Project
     https://fleming-tps-kykapp.github.io/Collab/ */
 header {
-    background-image: url("https://github.com/lindsayaldous/lindsayaldous.github.io/blob/main/images/IMG_0227.JPG?raw=true");
+    background-image: url("https://raw.githubusercontent.com/lindsayaldous/lindsayaldous.github.io/main/images/IMG_0227.JPG");
     background-size: cover;
     background-position-y: 98%;
     margin: 0px;
-    padding: 0px;
-    border: 0px;
     height: 8vw;
     }
 
+/* I used a colour picker extension in Chrome to get a light colour from my header image
+for the background and a darker one for the text so neither would clash too badly 
+with the image. I went with the verdana font family because it's one of my personal 
+favourites */
 body {
     background-color: rgb(234,234,224);
     margin: 0px;
     font-family: verdana;
-}
+    font-size: 13px;
+    color: #17140D;
+    }
 
-/* need to be careful about duplication! lots of my repetition can do in body 
-also need to add the w3 schools sources - that should help flesh out the 20% requirement!
-*/
-
+/* I used the same colour picker extension to get this shade of green as well. I'm not
+entirely keen on these particular colours, but I'd rather use the spare time I had for the
+header image instead of colour choices */
 h1 {
     color: #2B3210;
     font-size: 18px;
     margin: 20px;
     text-indent: 50px;
-}
+    }
+/* Perhaps I could've used a class in the p element for this intro text instead of a class
+in h1, but I liked the idea of this information being a long header so I left it */
     .intro {
         text-align: center;
         padding-top: 35px;
         padding-right: 200px;
         padding-left: 200px;
     }
-
 h2 {
-    color: #17140D;
-    font-size: 16px;
-    margin: 10px;
-    text-indent: 100px;
-}
-
-p {
-    color: #17140D;
     font-size: 14px;
+    margin: 10px;
+    margin-bottom: 1em;
+    text-indent: 100px;
+    }
+
+/* All of text elements needed to have hefty margins and padding because I wanted the
+nav bar and header to reach all the way to the edges of the page, and I couldn't figure
+out a more efficient way to do that than setting the margin as 0 in the body element
+and adjusting the other elements. There must be one though? */
+p {
     margin: 12px;
     margin-bottom: 1em;
     padding-right: 100px;
     padding-left: 100px;
-}
+    }
 
-
-/* https://www.w3schools.com/css/css_table.asp */
+/* I picked the table as one of my 3 extras - the CSS for the design choices came from
+w3 schools - https://www.w3schools.com/css/css_table.asp */
 table {
     border:1px solid #2B3210;
-    color: #17140D;
     margin-right: 125px;
     margin-top: 50px;
     float: right;
     padding: 5px;
-}
+    }
     th {
         border:1px solid #2B3210;
         font-size: 14px;
         height: 50px;
         width: 275px;
-    }
-
-    /* https://www.w3schools.com/css/css_table_style.asp */
+        }
+    /* To help with the "heavily formatted" aspect, I added an alternating colour
+    for the rows using info from https://www.w3schools.com/css/css_table_style.asp 
+    As with the rest of the colours, this one came from the header image */
     tr:nth-child(odd) {
         background-color: #f2eed0;
-    }
-
+        }
     td {
         border:1px solid #2B3210;
         font-size: 13px;
         padding: 5px
-    }
+        }
+        /* (Another attempt at the "heavily formatted" requirement) */
+        td.right {
+            text-align: center
+        }
 
-    td.right {
-        text-align: center
-    }
 
-/* the nav bar */
-/* needs way more notes */
+/* This navbar was a particular challenge to create. I did start with the CSS from
+the navbar at https://fleming-tps-kykapp.github.io/Collab/, as mentioned in my 
+HTML pages, but I ended up deviating quite a bit as I made adjustments to 
+better suit what I had in mind. I also referred to this page on w3schools to make
+sure I was still on the right(ish) track:
+https://www.w3schools.com/css/css_navbar_horizontal.asp */
 ul {
     list-style-type: none;
     margin: 0px;
@@ -98,28 +106,28 @@ ul {
     background-color: #373f14;
     font-size: 15px;
     text-align: center;
-}
+    }
     li {
         float: left;
-    }
-    li a {
-        display: block;
-        text-decoration: none;
-        padding: 10px 150px;
-        color: rgb(235,234,224);
-    }
-        /* got the hover idea from w3 schools */
-        /* https://www.w3schools.com/css/css_link.asp */
-        li a:hover {
-            background-color: rgb(235,234,224);;
-            color: #373f14;
         }
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 10px 150px;
+            color: rgb(235,234,224);
+            }
+            /* I got the hover idea from: https://www.w3schools.com/css/css_link.asp */
+            li a:hover {
+                background-color: rgb(235,234,224);;
+                color: #373f14;
+                }
 
 
 /* I picked the "2 external links" option from part 3 of the assignment outline.
-I pulled this CSS from w3schools, and modified it to better suit my design */
-/* https://www.w3schools.com/css/css3_buttons.asp */
-
+I pulled this CSS from w3schools, and modified it to better suit my design. The 
+background colour might be a little bolder than necessary, but I liked it with 
+the button-like style (though not a true button element)
+https://www.w3schools.com/css/css_link.asp */
 a.hyperlink {
     color: rgb(235,234,224);
     margin-bottom: 1em;
@@ -131,35 +139,32 @@ a.hyperlink {
     display: inline-block;
     border-radius: 16px;
     font-size: 12px;
-}
+    }
+    a.hyperlink:hover {
+        background-color: #f2eed0;
+        color: #373f14;
+        border: 1px solid #373f14;
+        }
 
-a.hyperlink:hover {
-    background-color: #f2eed0;
-    color: #373f14;
-    border: 1px solid #373f14;
-}
-
-
-/* so far this part is copied-pasted from w3 schools - need to fix that */
-
+/* Instead of fiddling with individual image and caption placements, I decided
+to try using an image gallery, similar to something Lindsey had used in one 
+of their earlier webpage drafts. I copied the CSS from w3 schools 
+https://www.w3schools.com/css/css_image_gallery.asp and took out the hover
+portion, set specific heights and widths of my images (which happen to be the 
+same, so I didn't bother with IDs), fixed spacing, and moved the captions around. */
 div.gallery {
     margin: 20px;
     float: left;
-    /* justify-content: center; */
-    margin-right: 20px;
-    margin-left: 115px;
-}
-        
-div.gallery img {
-    width: 600px;
-    height: 400px;
-    border: 1px solid black;
-}
-  
-div.desc {
-    padding: 15px;
-    text-align: center;
-    font-size: 14px;
-    color: #17140D;
-    font-weight: bold;
-  }
+    margin-left: 115px;    
+    }
+    div.gallery img {
+        width: 618px;
+        height: 400px;
+        border: 1px solid black;   
+        }
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        }
