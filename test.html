@@ -1,2 +1,243 @@
+<!-- <!DOCTYPE html>
 <html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
 
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>  -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<title>Ontario Municipalities</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <img src="images/Ontario-logo.jpg" class="w3-image" alt="Ontario Logo" width="100" height="74">
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#problem" class="w3-bar-item w3-button">Problem</a>
+      <a href="#methodology" class="w3-bar-item w3-button">Methodology</a>
+      <a href="#solution" class="w3-bar-item w3-button">Solution</a>
+      <a href="#team" class="w3-bar-item w3-button">Team</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Problem Section -->
+  <div class="w3-container w3-padding-top-64" id="problem">
+  <h1 class="w3-center">Problem</h1><br>
+  </div>
+
+    <div class="w3-container w3-padding-32">
+      <img src="images/Ontario_CanadaMap.png" class="w3-container w3-padding-32" alt="Ontario Map" style="width:300" align="right">
+      <h3>Problem Statement</h3>
+      <h5>Ideal</h5>
+      <p class="w3-text-grey">An interactive map to display the municipalities within Ontario and links to their official websites.
+      </p>
+      <h5>Reality</h5>
+      <p class="w3-text-grey">There is currently no web map that provides the links to the websites for the municipalities within all of Ontario.
+      </p>
+      <h5>Consequences</h5>
+      <p class="w3-text-grey">Currently, a user would need to use a map to find the municipality they are looking for and then use Google to find the official website manually.
+      </p>
+        <h5>Proposal</h5>
+      <p class="w3-text-grey">An interactive web map which displays all of the municipalities within Ontario, with the ability for users to click on each municipality and see a popup that contains its name and a link to the official website.
+      </p>
+      <h5>Technology</h5>
+      <p class="w3-text-grey">Geocortex 5, ArcGIS Online
+      </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Methodology Section -->
+  <div class="w3-container w3-padding-64" id="methodology">
+    <div>
+      <h1 class="w3-center">Methodology</h1><br>
+      <img src="images/Toronto.jpg" class="w3-container w3-padding-32" alt="Toronto skyline" style="width:50%" align="left">
+      <h4>Project Planning Phase</h4>
+      <p class="w3-text-grey"><b>What we did: </b>
+      We began by forming our problem statement, which can be seen above. First, we defined our ideal outcome of this project from a user's 
+      perspective. Next, we stated the current reality that exists for its potential users and the consequences should this continue to be the 
+      reality. Finally, we drafted a proposal briefly outlining our tentative solution to the problem, and the technology we would use to achieve it.
+      </p>
+      <p class="w3-text-grey"><b>What we learned: </b>
+      The first draft of our problem statement ended up being too all-encompassing for the scope of this project. We amended this by choosing 
+      to focus only on Geocortex 5 Web and ArcGIS Online. Our problem statement also focused too much on how it would benefit us, so we 
+      redirected the wording to really hone in on how the user would benefit from the creation of our project.
+      </p>
+      <p class="w3-text-grey"><b>Results: </b>
+      We had a specific and actionable problem statement to guide us for the rest of the project. We could return to it if we needed to 
+      remind ourselves of the scope and intent of what we were trying to do.
+      </p><br>
+    
+      <h4>Discovery and Experimentation Phase</h4>
+      <p class="w3-text-grey"><b>What we did: </b>
+      We spent this phase individually familiarizing ourselves with Geocortex 5 Web. We would share what we discovered with each other during 
+      our meetings. After some time experimenting with Geocortex on our own, we came together to explore some functions more related to our project.
+      </p>
+      <p class="w3-text-grey"><b>What we learned: </b>
+      The first thing we learned about Geocortex 5 Web is that it can actually be accessed from inside ArcGIS Online. This was a bit different from 
+      what we learned with Geocortex Essentials in class. We also encountered an unfortunate bug present in the version of Geocortex 5 Web provided 
+      by the school: when trying to edit a new Map component, a Loading Error occurs. As such, this means only one map component can be added 
+      to a layout. In addition, when adding a new layout, you MUST select "Copy current layout" because a blank layout will not be able to have 
+      a new functioning Map component added to it. The only workaround for this problem right now is to edit the Map component that is already present.
+      </p>
+      <p class="w3-text-grey"><b>Results: </b>
+      We developed a greater understanding of the functionality of Geocortex 5 Web, how it is used along with ArcGIS Online, and some of the 
+      issues we may encounter while creating our final product.
+      </p><br> 
+
+      <h4>Data Preparation Phase</h4>
+      <p class="w3-text-grey"><b>What we did: </b>
+      A dataset containing the polygon boundaries of the upper-tier, lower-tier, and single-tier municipalities of Ontario was brought into 
+      ArcGIS Pro and joined with an Excel file containing the URLs of the official websites of the municipalities. This data was then uploaded 
+      to ArcGIS Online, where it was accessible to be referenced in a Geocortex 5 Web app.
+      </p>
+      <p class="w3-text-grey"><b>Results: </b>
+      We were then ready to proceed to create our final product.
+      </p><br>
+
+      <h4>Development Phase</h4>
+      <p class="w3-text-grey"><b>What we did: </b>
+      We started by switching out the default 2D map for our map by linking it from ArcGIS Online. We also removed the default 3D map. Next, 
+      we customized many of the map components such as the Home tab, the Toolbar, and the Map surround elements. We also customized which fields 
+      are viewable to the map user, the only necessary two being the name of the municipality, and the URL to its website. Finally, the app was 
+      published by saving it, and then selecting "Deploy", and "Push to Production".
+      </p>
+      <p class="w3-text-grey"><b>What we learned: </b>
+      What we noted very quickly is that all edits to the actual map must be performed in ArcGIS Online, such as the symbolization of the 
+      layers, the viewable fields, and the default active layers. This was unexpected for us, as we initially had the impression that most of 
+      our work would be completed in Geocortex. We also discovered that Geocortex does not automatically save your work, it must be manually 
+      saved before you leave the page. we also encountered difficulty with using a custom image on the app. Images must be sized exactly to 
+      the dimensions of the app, or else they will not display properly, and they must be hosted on a publicly viewable site. Uploading our 
+      images to the Geocortex editor directly did not appear to work. Lastly, when publishing our application, we discovered that you can easily 
+      un-publish your app by setting the Sharing Permissions to "Not Shared" in the Deploy menu and selecting the Production menu. 
+      </p>
+      <p class="w3-text-grey"><b>Results: </b>
+      A successfully created beta version of our app, ready to be reviewed with Shawn.
+      </p><br>
+
+      <h4>Review Phase</h4>
+      <p class="w3-text-grey"><b>What we did: </b>
+      We provided Shawn with a link to our Geocortex 5 Web application, which he explored and provided us with feedback. We were able to view 
+      this process as a viewer of Shawn's screen. 
+      </p>
+      <p class="w3-text-grey"><b>Results: </b>
+      It was helpful to watch someone else interact with our product as a potential end user. It provided us with much insight to finalize 
+      our design. We took Shawn's suggestions and made appropriate slight changes to the final product. You can see our solution in action below!
+      </p>
+      <p class="w3-text-grey"><b>Future suggestions: </b>
+      To improve our product in the future, it would be helpful to also include the URLs to the upper-tier municipalities. Due to time constraints, 
+      this was not possible for us because we could not find a CSV or Excel document containing that information. It would also be helpful to develop 
+      a filter or similar system in Geocortex that would only show municipalities that have a website, as some do not, and their Website field is left blank as a result.
+      </p><br>
+
+    </div>
+    
+    <!-- <div class="w3-col l6 w3-padding-large">
+      <img src="images/Toronto.jpg" class="w3-image" alt="Toronto skyline" style="width:100%">
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="images/Toronto.jpg" class="w3-image" alt="Toronto skyline" style="width:50%">
+    </div> -->
+  </div>
+
+  <hr>
+
+  <!-- Solution Section -->
+  <div class="w3-container w3-padding-64" id="solution">
+    <h1 class="w3-center">Solution</h1><br>
+    <p class="w3-text-grey">To solve the problem at hand, an interactive map was developed using Geocortex 5 that displays all lower and upper tier 
+      municipalities in Ontario for the public to explore. Users can explore their boundaries and will have access to all their 
+      official names and websites just by clicking on the area of interest.</p>
+    <a class="w3-text-blue-grey w3-large" href="https://luna.flemingcollege.ca/Geocortex/WebViewer/?app=642cbce9691e4f979ec72ce1550d136e">Upper and Lower Tier Municipalities of Ontario</a>
+    <p class="w3-text-grey">Click the link above to view the final product.<i> The link will be inactive beyond April 30, 2021.</i> The image below is what the users will first see when they access the web map.</p>
+    <img src="images/Home.jpg" class="w3-image w3-border-black" alt="Menu" style="width:100%">
+    <h5>Tabs</h5>
+    <p class="w3-text-grey">The column on the left side of the web page shows three tabs labelled Home, Layers, and Legend. The home tab describes what 
+      users will be able to do with the features to view the municipalities. The layer tab shows the two layers called Lower 
+      Boundary and Upper Boundary that can be turned on or off to display them on the map.  The third tab is the legend which shows
+       which polygons belong to each layer. The upper boundary municipalities are coloured yellow and the lower boundary 
+       municipalities are blue.</p>
+    <h5>Search Bar</h5>
+    <p class="w3-text-grey">Users can use the search bar to enter keywords to locate areas of interest and are provided with a 
+      list of results relating to the search. When the user clicks on one of these results, they are provided with the option to 
+      view the location with the World Geocoder for ArcGIS or with the Lower or Upper Boundary layers if applicable. For the example of 
+      Gravenhurst, the selectable layers based on this search are the World Geocoder for ArcGIS and the Lower Boundary layer.</p>
+    <h5>Toolbar</h5>
+    <p class="w3-text-grey">The toolbar provides the users with the opportunity to draw points, lines or polygons on the map and 
+      then clear those markups with the click of a button. There is also a measure tool that allows the user to measure lengths 
+      across the map or measure any given area. The fourth option on the toolbar is the identify tool that allows the user to 
+      pinpoint a location on the map and results for municipalities in that area appear in a list. The list shows both municipality 
+      tier layers and has the options for users to click on a feature of interest and have it attributes appear in the side column. 
+      The last option in the toolbar is the ability to print the map at a scale determined by the user. With the I want to menu, 
+      users are able to return to the initial map position and zoom level and also switch the colour theme to dark depending on the 
+      user's preference.</p>
+      <h5>Widgets</h5>
+      <p class="w3-text-grey">In the bottom right corner of the web page there are two widgets that help users customize the map. 
+        The button on the left allows the user to choose a new basemap from a provided list. The button on the right allows users 
+        to create bookmarks of an area and give it a name. With these bookmarks, the users are able to quickly return to that view 
+        and continue exploring. In the top left corner of the map under the I want to menu, there is another widget that allows the 
+        user to zoom in and out on the map. This can also be accomplished by scrolling with the mouse.</p>
+  </div>
+  
+  <hr>
+
+  <!-- Team Section -->
+  <div class="w3-container w3-padding-64" id="team">
+    <h1 class="w3-center">The Team</h1><br>
+    <p></p>
+    <p class="w3-text-blue-grey w3-large"><b>David Purdham</b></p>
+    <p class="w3-text-grey"">GIS Applications Specialist with background in Geography and Environmental Sustainability. David has work experience using GIS in the public and private sectors.
+      Experience conducting spatial analyses such as site suitability, least-cost path analysis and MCDA (Multi-criteria Decision
+      Analysis) and using ArcGIS applications to collect, manipulate and present data. David can extract and manipulate data through various programming languages and 
+      enjoys producing visually appealing maps to illustrate the findings.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Erik Oosterbaan</b></p>
+    <p class="w3-text-grey"">GIS Cartographic Specialist with a background in Business Administration and Marketing. Erik has GIS skills 
+    in cartographic representation, geovisualization, and web-based map and application configuration. Erik has an interest in the mapping 
+    needs of municipalities, the various types of cartographic outputs they produce as a part of their operations, and their processes of 
+    disaster management. </p>
+    <div><img src="images/ontario_trees.jpg" class="w3-image" alt="Ontario Trees" width="1100" height="600" align="center"></div>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
