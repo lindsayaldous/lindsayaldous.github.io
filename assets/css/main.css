@@ -10,6 +10,7 @@
 /* addition to template CSS for Leaflet map */
 #map { height: 180px; }
 img.huechange1 { filter: hue-rotate(54deg);}
+img.huechange2 { filter: hue-rotate(14deg);}
 
 
 html, body, div, span, applet, object,
