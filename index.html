@@ -52,51 +52,6 @@
 						</ul>
 						<div id="map"></div>
 
-						<!-- probably a better place for this (i.e. its own file maybe?)-->
-						<script>
-
-							var locations = [
-								["<b>University of Waterloo</b><br>Event & Communications Assistant", 43.4723, -80.5449, 1],
-								["<b>BioLiNE Corp</b><br>Processing Plant Operator & Research Assistant", 42.8657, -81.8942, 1],
-								["<b>Agriculture & Agri-Food Canada</b><br>Agronomy Research Assistant", 50.5327, -103.6516, 1],
-								["<b>Canadian Wildlife Service</b><br>Wildlife Permits Assistant", 45.3166, -75.6909, 1],
-								["<b>Municipality of Kincardine</b><br>GIS Student", 44.2051, -81.5999, 1],
-								["<b>Regional Municipality of York</b><br>Fleming GIS Collaborative Project", 44.0485, -79.4799, 1],
-								["<b>University of Guelph</b><br>Bachelor of Science in Environmental Sciences<br>Major: Environment & Resource Management", 43.5327, -80.2262, 2],
-								["<b>Fleming College</b><br>Graduate Certificate in Geographic Information Systems (GIS)<br>Stream: Applications Specialist", 44.3410, -78.7412, 2]
-							];
-					
-							var map = L.map('map').setView([47.9846, -91.5055], 5);
-					
-							var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-								maxZoom: 19,
-								attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-							}).addTo(map);
-					
-							// marker to help with centring map
-							// var marker = L.marker([47.9846, -91.5055]).addTo(map);
-					
-							//https://stackoverflow.com/questions/42968243/how-to-add-multiple-markers-in-leaflet-js
-							for (var i = 0; i < locations.length; i++) {
-								marker = new L.marker([locations[i][1], locations[i][2]], {alt:'Location marker'})
-									.bindPopup(locations[i][0])
-									.addTo(map);
-								// adjust colour of markers with third suggestion from this thread:
-								// https://stackoverflow.com/questions/23567203/leaflet-changing-marker-color
-								// marker._icon.classList.add("huechange");
-					
-								// setting hue change according to type of location - education vs. work experience
-								if (locations[i][3] == 1) {
-									marker._icon.classList.add("huechange1");
-								} else {
-									marker._icon.classList.add("huechange2");
-								}
-							}
-					
-						// consider adjustments from here? http://melmo.github.io/accessibility/code/dist/leaflet.html
-					
-						</script>
-
 					</section>
 
 				<!-- Two -->
@@ -125,12 +80,12 @@
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
+								<h3>Analysis of Scots Pine Invasion in the University of Guelph Arboretum's Nature Reserve</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
+								<h3>Natural Capital Valuation Assessment of Alberta Oil Sands Reclamation Commitments</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 						</div>
@@ -198,6 +153,51 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Leaflet map - probably a better place for this (i.e. its own file maybe?)-->
+			<script>
+
+				var locations = [
+					["<b>University of Waterloo</b><br>Event & Communications Assistant", 43.4723, -80.5449, 1],
+					["<b>BioLiNE Corp</b><br>Processing Plant Operator & Research Assistant", 42.8657, -81.8942, 1],
+					["<b>Agriculture & Agri-Food Canada</b><br>Agronomy Research Assistant", 50.5327, -103.6516, 1],
+					["<b>Canadian Wildlife Service</b><br>Wildlife Permits Assistant", 45.3166, -75.6909, 1],
+					["<b>Municipality of Kincardine</b><br>GIS Student", 44.2051, -81.5999, 1],
+					["<b>Regional Municipality of York</b><br>Fleming GIS Collaborative Project", 44.0485, -79.4799, 1],
+					["<b>University of Guelph</b><br>Bachelor of Science in Environmental Sciences<br>Major: Environment & Resource Management", 43.5327, -80.2262, 2],
+					["<b>Fleming College</b><br>Graduate Certificate in Geographic Information Systems (GIS)<br>Stream: Applications Specialist", 44.3410, -78.7412, 2]
+				];
+		
+				var map = L.map('map').setView([47.9846, -91.5055], 5);
+		
+				var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 19,
+					attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+				}).addTo(map);
+		
+				// marker to help with centring map
+				// var marker = L.marker([47.9846, -91.5055]).addTo(map);
+		
+				//https://stackoverflow.com/questions/42968243/how-to-add-multiple-markers-in-leaflet-js
+				for (var i = 0; i < locations.length; i++) {
+					marker = new L.marker([locations[i][1], locations[i][2]], {alt:'Location marker'})
+						.bindPopup(locations[i][0])
+						.addTo(map);
+					// adjust colour of markers with third suggestion from this thread:
+					// https://stackoverflow.com/questions/23567203/leaflet-changing-marker-color
+					// marker._icon.classList.add("huechange");
+		
+					// setting hue change according to type of location - education vs. work experience
+					if (locations[i][3] == 1) {
+						marker._icon.classList.add("huechange1");
+					} else {
+						marker._icon.classList.add("huechange2");
+					}
+				}
+		
+			// consider adjustments from here? http://melmo.github.io/accessibility/code/dist/leaflet.html
+		
+			</script>
 
 	</body>
 </html>
