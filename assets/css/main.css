@@ -153,34 +153,34 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2em;
+		font-size: 1.5em;	/* was 2.0em */
 		line-height: 1.5em;
 	}
 
 	h2 {
-		font-size: 1.5em;
-		line-height: 1.5em;
-	}
-
-	h3 {
 		font-size: 1.25em;
 		line-height: 1.5em;
 	}
 
-	h4 {
+	h3 {
 		font-size: 1.1em;
 		line-height: 1.5em;
 	}
 
-	h5 {
+	h4 {
 		font-size: 0.9em;
 		line-height: 1.5em;
 	}
 
-	h6 {
+	h5 {
 		font-size: 0.7em;
 		line-height: 1.5em;
 	}
+
+	/* h6 {
+		font-size: 0.7em;
+		line-height: 1.5em;
+	} */
 
 	sub {
 		font-size: 0.8em;
@@ -2597,7 +2597,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #183350;
+		background-color: #010e00;
 		/* background-color: #1f1815; */
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/sidebar_DSC_0154.JPG");
@@ -3085,7 +3085,7 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #183350;
+				background-color: #010e00;
 				/* background-color: #1f1815; */
 				background-image: url("images/overlay.png"), url("../../images/sidebar_DSC_0154.JPG"); /* was bg.jpg */
 				background-position: top left,						bottom center;
